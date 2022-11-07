@@ -1,0 +1,70 @@
+.legend{
+  margin-bottom: 10px;
+}
+
+.input-box, .textarea-box {
+  position: relative;
+
+  .input, .textarea {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px;
+    color: #464646;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px 10px;
+    width: 250px;
+  }
+}
+
+.input{
+  height: 50px;
+}
+.textarea{
+  height: 82px;
+}
+
+.input:focus, .textarea:focus{
+  outline: none;
+}
+
+.input::placeholder, 
+.textarea::placeholder{
+  visibility: hidden;
+}
+
+.label{
+  color: #a2a2a2;
+  left: 10px;
+  position: absolute;
+  top: 20px;
+  transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown) + .label,
+.input:focus + .label,
+.textarea:not(:placeholder-shown) + .label,
+.textarea:focus + .label{
+font-size: 12px;
+top: 0.25rem;
+transition: all 0.25s;
+}
+
+.footer-button{
+  background-color: #b38867;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px;
+}
+.footer-button:focus{
+  outline: none;
+}
+.footer-button:active{
+  animation: dissolve 300ms;
+}

@@ -1,0 +1,29 @@
+.banner-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+  .banner-text{
+    position: relative;
+    font-size: 50px;
+  }
+}
+
+.banner-container:before {
+  background-image: url('../../assets/image002.jpeg');
+  background-position: center;
+  background-size: cover;
+  content: '';
+  height: calc(100vh - 80px);
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+}
