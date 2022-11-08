@@ -10,10 +10,12 @@ const Header = () => {
     <Fragment>
       <div className='header-container'>
         <div className='logo-container'>
-          <img className='logo' src={Logo} alt='logo' />
-          <h1 className='title'>MC Servicios Inmobiliarios</h1>
+          <div>
+            <img className='logo' src={Logo} alt='logo' />
+          </div>
+          <h1 className='title'>347 Servicios Inmobiliarios</h1>
         </div>
-        <h3>mcserviciosinmobiliarios@gmail.com</h3>
+        <h3 className='header-contacto'>347serviciosinmobiliarios@gmail.com</h3>
         <div className="nav__burguer">
           <div className="nav__burguer-line-1"></div>
           <div className="nav__burguer-line-2"></div>

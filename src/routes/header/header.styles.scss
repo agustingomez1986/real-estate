@@ -1,14 +1,27 @@
+:root{
+  --header-height: 160px;
+  --header-title-width: 200px;
+
+  @media (min-width: 540px){
+    --header-title-width: calc(80vw - 70px);
+  }
+}
+
 .header-container{
   align-items: center;
   background-color: rgb(153, 185, 134);
   display: flex;
-  height: 80px;
-  justify-content: space-around;
-  padding: 10px 10vw;
+  flex-direction: column;
+  font-family: Cinzel;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding: 10px 5px;
 
   .logo-container{
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
     .logo{
       border-radius: 50%;
@@ -18,38 +31,54 @@
     }
 
     .title{
+      font-size: 25px;
+      width: var(--header-title-width);
+    }
+  }
+  
+  .header-contacto{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 540px){
+  .header-container{
+    gap: 0;
+    justify-content: center;
+
+    .header-contacto{
       margin-bottom: 10px;
     }
   }
-
-  .nav__burguer {
-    width: 30px;
-    display: block;
-    cursor: pointer;
-  
-    .nav__burguer-line-1, .nav__burguer-line-2, .nav__burguer-line-3 {
-      display: block;
-      background-color: #222222;
-      content: "";
-      height: 4px;
-      border-radius: 3px;
-      margin: 4px 0;
-      transition: all 0.5s;
-    }
-    
-    .nav__burguer-line-1.active {
-      transform: translatey(0px) rotate(30deg);
-      background-color: #ee332c;
-    }
-    
-    .nav__burguer-line-2.active {
-      transform: translate(0) rotate(135deg);
-      background-color: #ee332c;
-    }
-    
-    .nav__burguer-line-3.active {
-      transform: translatey(-8px) rotate(-135deg);
-      background-color: #ee332c;
-    }
-  }  
 }
+
+.nav__burguer {
+  width: 30px;
+  display: block;
+  cursor: pointer;
+
+  .nav__burguer-line-1, .nav__burguer-line-2, .nav__burguer-line-3 {
+    display: block;
+    background-color: #222222;
+    content: "";
+    height: 4px;
+    border-radius: 3px;
+    margin: 4px 0;
+    transition: all 0.5s;
+  }
+  
+  .nav__burguer-line-1.active {
+    transform: translatey(0px) rotate(30deg);
+    background-color: #ee332c;
+  }
+  
+  .nav__burguer-line-2.active {
+    transform: translate(0) rotate(135deg);
+    background-color: #ee332c;
+  }
+  
+  .nav__burguer-line-3.active {
+    transform: translatey(-8px) rotate(-135deg);
+    background-color: #ee332c;
+  }
+}  

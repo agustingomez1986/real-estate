@@ -7,7 +7,7 @@ import Publicacion002 from '../../assets/publicacion002.jpeg'
 
 const CarouselHome = () => {
   return (
-    <Carousel autoPlay='true' infiniteLoop='true' width='600px'>
+    <Carousel autoPlay='true' infiniteLoop='true' width='50%' swipeScrollTolerance={10}>
       <div>
         <img src={Publicacion001} alt='001'/>
         <p className="legend">Legend 1</p>

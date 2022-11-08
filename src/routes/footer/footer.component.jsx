@@ -15,7 +15,7 @@ const Footer = () => {
           <img className='logo-footer' src={Logo} alt='logo' />
         </div>
         <div className='data-container'>
-          <h1>MC Servicios Inmobiliarios</h1>
+          <h1 className='footer-title'>347 Servicios Inmobiliarios</h1>
           <ul className='footer__data__list'>
             <li>Maria Teresa Cortada</li>
             <li>Martillera, Corredora Pública y Corredora Inmobiliaria</li>

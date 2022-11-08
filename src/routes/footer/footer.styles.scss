@@ -2,11 +2,13 @@
   background-color: #524a3a;
   color: #eae2d6;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 20px;
   justify-content: space-around;
   padding: 35px 10vw 20px;
 
   .logo-footer-container{
+    justify-content: center;
     display: flex;
 
     .logo-footer{
@@ -17,6 +19,11 @@
   }
 
   .data-container{
+
+    .footer-title{
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
     .footer__data__list{
       display: flex;
