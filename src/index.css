@@ -1,3 +1,10 @@
+:root {
+  --color-gris: #736e6a;
+  --color-coral: #fed7ab;
+  --color-esmeralda: #0da0aa;
+  --color-verde: rgb(146, 179, 150);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,4 +45,8 @@ fieldset {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin: 0;
 }

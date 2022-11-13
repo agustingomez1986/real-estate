@@ -1,6 +1,6 @@
 .footer-container{
-  background-color: #524a3a;
-  color: #eae2d6;
+  background-color: var(--color-gris);
+  color: var(--color-coral);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -12,23 +12,15 @@
     display: flex;
 
     .logo-footer{
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
+      width: 80%;
     }
   }
 
   .data-container{
-
-    .footer-title{
-      margin-bottom: 20px;
-      text-align: center;
-    }
 
     .footer__data__list{
       display: flex;
       flex-direction: column;
     }
   }
-    
 }

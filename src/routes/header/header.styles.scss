@@ -1,44 +1,75 @@
 :root{
-  --header-height: 160px;
-  --header-title-width: 200px;
-
-  @media (min-width: 540px){
-    --header-title-width: calc(80vw - 70px);
-  }
+  --header-min-height: 130px;
 }
 
-.header-container{
+.header{
   align-items: center;
-  background-color: rgb(153, 185, 134);
+  background-color: var(--color-verde);
   display: flex;
   flex-direction: column;
-  font-family: Cinzel;
-  height: var(--header-height);
-  justify-content: space-between;
-  padding: 10px 5px;
+  font-family: 'Bell MT';
+  gap: 4px;
+  min-height: var(--header-min-height);
+  padding: 15px 0 5px;
 
-  .logo-container{
+  .header-container{
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 0 10px;
     width: 100%;
 
-    .logo{
-      border-radius: 50%;
-      height: 70px;
-      margin-right: 20px;
-      width: 70px;
+    .logo-container{
+      align-items: baseline;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  
+      .logo{
+        margin-right: 5px;
+        width: 70%;
+      }
     }
 
-    .title{
-      font-size: 25px;
-      width: var(--header-title-width);
+    .nav__burguer {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 20px;
+    }
+    
+    .nav__burguer-line-1, .nav__burguer-line-2, .nav__burguer-line-3 {
+      display: block;
+      background-color: #222222;
+      content: "";
+      height: 2px;
+      border-radius: 1.5px;
+      margin: 4px 0;
+      transition: all 0.5s;
+    }
+    
+    .nav__burguer-line-1.active {
+      transform: translatey(0px) rotate(30deg);
+      background-color: #ee332c;
+    }
+    
+    .nav__burguer-line-2.active {
+      transform: translate(0) rotate(135deg);
+      background-color: #ee332c;
+    }
+    
+    .nav__burguer-line-3.active {
+      transform: translatey(-8px) rotate(-135deg);
+      background-color: #ee332c;
     }
   }
-  
-  .header-contacto{
-    font-size: 15px;
+
+  .nav-arrow {
+    cursor: pointer;
   }
+  
 }
 
 @media (min-width: 540px){
@@ -51,34 +82,3 @@
     }
   }
 }
-
-.nav__burguer {
-  width: 30px;
-  display: block;
-  cursor: pointer;
-
-  .nav__burguer-line-1, .nav__burguer-line-2, .nav__burguer-line-3 {
-    display: block;
-    background-color: #222222;
-    content: "";
-    height: 4px;
-    border-radius: 3px;
-    margin: 4px 0;
-    transition: all 0.5s;
-  }
-  
-  .nav__burguer-line-1.active {
-    transform: translatey(0px) rotate(30deg);
-    background-color: #ee332c;
-  }
-  
-  .nav__burguer-line-2.active {
-    transform: translate(0) rotate(135deg);
-    background-color: #ee332c;
-  }
-  
-  .nav__burguer-line-3.active {
-    transform: translatey(-8px) rotate(-135deg);
-    background-color: #ee332c;
-  }
-}  

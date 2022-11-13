@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import CarouselHome from '../../components/carousel/carousel.component'
 
+
 import './home.styles.scss';
 
 const Home = () => {
@@ -15,7 +16,6 @@ const Home = () => {
         <CarouselHome />
       </div>
     </Fragment>
-    
   )
 }
 

@@ -1,0 +1,49 @@
+.header-dropdown-container {
+  background-color: var(--color-gris);
+  color: var(--color-coral);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  
+  .dropdown-title-container {
+    font-weight: bold;
+    line-height: 0.8;
+    margin: 0 auto 20px;
+    text-align: center;
+    
+    .dropdown-title1 {
+      font-size: 30px;
+    }
+    .dropdown-title2 {
+      font-size: 44px;
+    }
+    .dropdown-title3 {
+      font-size: 53px;
+    }
+
+  }
+
+  .dropdown-aboutUs-container{
+    margin-bottom: 20px;
+    text-align: center;
+
+    .dropdown-aboutUs-title {
+      margin-bottom: 10px;
+    }
+
+    .dropdown-aboutUs-text {
+      font-size: 20px;
+    }
+  }
+
+  .dropdown-image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+
+  .dropdown-text {
+    font-size: 18px;
+  }
+}
