@@ -1,15 +1,21 @@
-import { Fragment, useContext } from 'react';
+import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { HeaderContext } from '../../context/header.context';
-import HeaderDropdown from '../../components/header-dropdown/header-dropdown.component';
-import Logo from '../../assets/complete-logo.png';
-
-import './header.styles.scss';
+import Logo from '../../assets/complete-logo-invert.png';
+import LogoHouse from '../../assets/logo-invert.png';
 import HeaderArrowIcon from '../../components/header-arrow-icon/header-arrow-icon.component';
 
+import './header.styles.scss';
+
 const Header = () => {
-const { isHeaderOpen } = useContext(HeaderContext)
+  // activeLogo = Logo;
+  window.addEventListener("scroll", ()=>{
+    if (window.scrollY !=0) {
+      return LogoHouse;
+    } else {
+      return Logo;
+    }
+  })
 
   return (
     <Fragment>
@@ -27,7 +33,6 @@ const { isHeaderOpen } = useContext(HeaderContext)
         <div className="nav-arrow">
           <HeaderArrowIcon />
         </div>
-        {isHeaderOpen && <HeaderDropdown />}
       </div>
       <Outlet />
     </Fragment>

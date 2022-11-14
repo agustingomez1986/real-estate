@@ -1,18 +1,25 @@
 import { useContext } from "react";
-import { HeaderContext } from "../../context/header.context";
+import { DropdownContext } from "../../context/dropdown.context";
 
 import ArrowDown from '../../assets/arrow-down.png'
+import ArrowUp from '../../assets/arrow-up.png'
 
 import './header-arrow-icon.styles.scss';
 
 const HeaderArrowIcon = () => {
-  const { isHeaderOpen, setIsHeaderOpen } = useContext(HeaderContext);
-  const toggleIsHeaderOpen = () => setIsHeaderOpen(!isHeaderOpen);
+  const { isDropdownOpen, setIsDropdownOpen } = useContext(DropdownContext);
+  const toggleIsDropdownOpen = () => setIsDropdownOpen(!isDropdownOpen);
+
+  var arrowDirection = ArrowDown;
+  if (isDropdownOpen) {
+    arrowDirection = ArrowUp;
+  } else {
+    arrowDirection = ArrowDown;
+  }
 
   return (
-    <div className="header-arrow-icon" onClick={toggleIsHeaderOpen}>
-      <img className="arrow-down-icon" src={ArrowDown} alt="arrow-down" />
-      {/* &#9660 */}
+    <div className="header-arrow-container" onClick={toggleIsDropdownOpen}>
+      <a href="#top"><img className="header-arrow-icon" src={arrowDirection} alt="arrow-down" /></a>
     </div>
   )
 }

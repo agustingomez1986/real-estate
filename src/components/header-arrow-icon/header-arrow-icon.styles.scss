@@ -1,9 +1,7 @@
-.header-arrow-icon {
-  color: var(--color-gris);
-  margin-top: 10px;
+.header-arrow-container {
+  height: 15px;
 
-  .arrow-down-icon {
-    color: var(--color-gris);
+  .header-arrow-icon {
     scale: 0.5;
   }
 }

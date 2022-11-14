@@ -6,15 +6,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
-import { HeaderProvider } from './context/header.context';
+import { DropdownProvider } from './context/dropdown.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <HeaderProvider>
+      <DropdownProvider>
         <App />
-      </HeaderProvider>
+      </DropdownProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

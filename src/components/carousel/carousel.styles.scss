@@ -1,3 +1,17 @@
 .image-slider {
   width: 80vw;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.data-slider {
+  display: flex;
+  position: relative;
+  top: -30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
 }

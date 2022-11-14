@@ -4,19 +4,21 @@
 
 .header{
   align-items: center;
-  background-color: var(--color-verde);
+  background-color: var(--color-gris);
   display: flex;
   flex-direction: column;
   font-family: 'Bell MT';
-  gap: 4px;
   min-height: var(--header-min-height);
-  padding: 15px 0 5px;
+  padding: 5px 0 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   .header-container{
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 0 10px;
+    padding: 5px 10px;
     width: 100%;
 
     .logo-container{
@@ -26,8 +28,7 @@
       width: 100%;
   
       .logo{
-        margin-right: 5px;
-        width: 70%;
+        width: 80%;
       }
     }
 
@@ -68,8 +69,7 @@
 
   .nav-arrow {
     cursor: pointer;
-  }
-  
+  } 
 }
 
 @media (min-width: 540px){

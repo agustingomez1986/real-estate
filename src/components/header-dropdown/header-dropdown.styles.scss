@@ -1,39 +1,22 @@
 .header-dropdown-container {
   background-color: var(--color-gris);
   color: var(--color-coral);
-  display: block;
+  display: inline-block;
+  font-family: 'Bell MT';
   padding: 15px;
   width: 100%;
   
-  .dropdown-title-container {
+  .dropdown-title {
+    font-size: 15px;
     font-weight: bold;
-    line-height: 0.8;
     margin: 0 auto 20px;
     text-align: center;
-    
-    .dropdown-title1 {
-      font-size: 30px;
-    }
-    .dropdown-title2 {
-      font-size: 44px;
-    }
-    .dropdown-title3 {
-      font-size: 53px;
-    }
-
+    text-decoration: underline;
   }
 
-  .dropdown-aboutUs-container{
-    margin-bottom: 20px;
+  .dropdown-aboutUs-title {
+    margin: 30px 0;
     text-align: center;
-
-    .dropdown-aboutUs-title {
-      margin-bottom: 10px;
-    }
-
-    .dropdown-aboutUs-text {
-      font-size: 20px;
-    }
   }
 
   .dropdown-image {
@@ -41,6 +24,11 @@
     justify-content: center;
     margin: 0 auto 20px;
     width: 100%;
+  }
+
+  .dropdown-aboutUs {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 
   .dropdown-text {
