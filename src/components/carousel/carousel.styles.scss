@@ -7,11 +7,24 @@
 }
 
 .data-slider {
-  display: flex;
-  position: relative;
-  top: -30px;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  justify-content: space-around;
   color: white;
+  display: flex;
   font-weight: bold;
+  height: 30px;
+  justify-content: space-around;
+  position: relative;
+  top: -40px;
+
+  .data-slider__list {
+    display: flex;
+    align-items: center;
+
+    .slider__home-icon {
+      color: white;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
 }
